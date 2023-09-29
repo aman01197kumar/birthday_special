@@ -1,42 +1,104 @@
-#root {
-  max-width: 1280px;
+
+
+.image-container{
+  display: flex;
+    justify-content: center;
+}
+.gallery{
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+}
+.gallery .pics{
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms all;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+@media (max-width:991px){
+  .gallery{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    
+  }
+}
+@media (max-width:480px){
+  .gallery{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+.model{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000;
+  transition: opacity,4s ease, visibility, 4s ease,transform, 5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.model.open{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  backdrop-filter: blur(10px); /* Adjust the value to control the blur intensity */
+  background-color: rgba(255, 255, 255, 0.5); /* Add a background color with opacity for better visibility */
+  /* Other styling for the element */
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.model img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  max-height: 100%;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
   margin: 0 auto;
-  padding: 2rem;
+}
+.model.open svg{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.4);
+  color: #ffff;
+  cursor: pointer;
+}
+.cross_btn{
+  z-index: 99999;
+    position: relative;
+    top: -19rem;
+    left: -3rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+.title{
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
 }
