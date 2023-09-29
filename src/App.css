@@ -2,6 +2,9 @@
 .app__wrapper{
   /* margin-top: 2rem; */
   background-image: url('https://media3.giphy.com/media/HSCZMUa1ao17h7l5mg/giphy.gif');
+  background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .image-container{
@@ -40,12 +43,12 @@
     -moz-column-width: 100%;
     column-width: 100%;
   }
-  .gifi{
+  /* .gifi{
     width: 30%;
-   }
+   } */
 }
  .gifi{
-  width: 10%;
+  width: 30%;
  }
 .model{
   width: 100%;
