@@ -40,7 +40,7 @@
 
 .model{
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -63,7 +63,7 @@
   backdrop-filter: blur(10px); /* Adjust the value to control the blur intensity */
   background-color: rgba(255, 255, 255, 0.5); /* Add a background color with opacity for better visibility */
   /* Other styling for the element */
-  padding: 20px;
+  /* padding: 20px; */
   border: 1px solid #ccc;
 }
 .model img{
@@ -91,8 +91,8 @@
 .cross_btn{
   z-index: 99999;
     position: relative;
-    top: -19rem;
-    left: -3rem;
+    top: -18rem;
+    left: -2rem;
     font-weight: 800;
     cursor: pointer;
 }
