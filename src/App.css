@@ -1,4 +1,8 @@
 
+.app__wrapper{
+  /* margin-top: 2rem; */
+  background-image: url('https://media3.giphy.com/media/HSCZMUa1ao17h7l5mg/giphy.gif');
+}
 
 .image-container{
   display: flex;
@@ -36,11 +40,16 @@
     -moz-column-width: 100%;
     column-width: 100%;
   }
+  .gifi{
+    width: 30%;
+   }
 }
-
+ .gifi{
+  width: 10%;
+ }
 .model{
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -101,4 +110,5 @@
     padding: 1rem;
     font-size: 2rem;
     font-weight: 600;
+    color: chocolate;
 }

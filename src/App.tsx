@@ -1,15 +1,17 @@
 import './App.css'
 import Gallery from './Gallery'
+import gifi from './assets/onlinegift.gif'
 
 function App() {
 
   return (
-    <div style={{marginTop:'1rem'}}>
+    <div className='app__wrapper'>
       <div className="image-container">
         <img
-          src="https://gifdb.com/images/high/in-love-emoji-qdo8exddondr1qae.gif"
+        className='gifi'
+          src={gifi}
           alt="gif"
-          width="10%"
+        
         />
       </div>
       <div className="title">
