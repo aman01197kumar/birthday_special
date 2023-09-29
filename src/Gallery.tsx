@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { imageGallery } from "./imageGallery";
 
 function Gallery() {
