@@ -18,7 +18,7 @@ function Gallery() {
         </div>
         <div className="model__container">
           <img src={tempImgSrc} />
-          <div style={{textAlign:'center', fontSize:'19px'}}>{messageString}</div>
+          <div style={{textAlign:'center', fontSize:'19px', padding:'1rem'}}>{messageString}</div>
         </div>
       </div>
       <div className="gallery">
