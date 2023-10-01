@@ -123,5 +123,5 @@
   display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
