@@ -18,6 +18,7 @@ import img17 from "./img/IMG-20230923-WA0035.jpg";
 import img18 from "./img/IMG-20230924-WA0001.jpg";
 import img19 from "./img/IMG-20230924-WA0007.jpg";
 import img20 from "./img/IMG-20230925-WA0002.jpg";
+import img21 from './img/new.jpeg'
 
 export const imageGallery = [
   {
@@ -134,5 +135,11 @@ export const imageGallery = [
     imgsrc: img20,
     message:
       "Finally, I want to express that you are truly exceptional. My affection for you is immeasurable. Whenever we're apart, I find it difficult to be at ease. Your presence is essential to me, and I wish for you to always remain by my side. Please, never depart from me.😍😘🥰❣💖",
+  },
+  {
+    id: 21,
+    imgsrc: img21,
+    message:
+      "She is more motherly before being a mother 👩‍👧",
   },
 ];
